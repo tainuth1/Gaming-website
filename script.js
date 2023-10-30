@@ -69,3 +69,11 @@ btn4.addEventListener("click", function(){
   firstName.innerHTML = "MONSTER";
   lastName.innerHTML = "HUNTER";
 });
+
+
+$('.slider').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 1000,
+});

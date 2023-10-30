@@ -609,13 +609,12 @@ li{list-style: none;}
     height: 500px; */
     width: 100%;
     height: 100%;
-    /* background-color: #ffc107; */
     color: white;
     position: absolute;
     text-align: center;
     top: 0;
-    display: none;
-    transition: all 1s;
+    opacity: 0;
+    transition: all .3s;
 }
 .hover-feature img{
     width: 30px;
@@ -623,12 +622,12 @@ li{list-style: none;}
     margin-top: 10rem;
 }
 .feature-card:hover .hover-feature{
-    display: block;
+    opacity: 1;
     backdrop-filter: blur(5px);
     background-color: rgba(255, 193, 7, 0.105);
 }
 .mid-feature-card1:hover .hover-feature, .mid-feature-card2:hover .hover-feature{
-    display: block;
+    opacity: 1;
     backdrop-filter: blur(5px);
     background-color: rgba(255, 193, 7, 0.105);
 }
@@ -640,5 +639,122 @@ li{list-style: none;}
     transition: all .5s;
 }
 .fa-bell, .hover-feature h2 span, .card-title h2 span{
+    color: #ffc107;
+}
+
+    /* <===Category===> */
+
+.back-category{
+    width: 100%;
+    background-color: #ffc107;
+    margin-top: 6.5rem;
+    background-image: url(images/cta_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 8rem 0;
+}
+.category{
+    width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    gap: 4rem;
+}
+.left-cate{
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-cate{
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+}
+.right-cate h2{
+    font-size: 3.2rem;
+    font-weight: 900;
+    color: white;
+}
+.right-cate h2 span{
+    color: #ffc107;
+}
+.right-cate p{
+    font-size: 20px;
+    color: white;
+    line-height: 2rem;
+}
+.right-cate img:nth-child(1){
+    width: 50px;
+}
+.right-cate img:nth-child(4){
+    width: 300px;
+    margin-top: 1rem;
+}
+.cate-btn{
+    width: 220px;
+}
+
+.back-product{
+    background-color: #1c1121;
+    padding: 1rem 0 5rem 0;
+}
+.product{
+    width: 1250px;
+    margin: 0 auto;
+}
+.product-title h2{
+    color: white ;
+}
+.product-title p{
+    color: #a5a5a5;
+}
+.product-slider{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+}
+.product-card{
+    width: 280px;
+    margin: 10px 20px;
+    background-color: #1c1121;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow:  7px 7px 13px #110a14,
+             -7px -7px 13px #27182e;
+}
+.pro-img{
+    position: relative;
+}
+.pro-img img{
+    width: 100%;
+}
+.pro-detail{
+    padding: 1.8rem 1.4rem 1.5rem 1.4rem;
+}
+.name-tage{
+    position: absolute;
+    left: 32%;
+    bottom: -15px;
+    background-color: #ffc107;
+    padding: 10px 20px;
+}
+.pro-detail h2{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    margin-top: 1.3rem;
+    transition: all .2s;
+    margin: 1rem 0;
+}
+.pro-detail h2:hover{
+    color: #ffc107;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: #ffc107;
 }
