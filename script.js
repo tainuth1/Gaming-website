@@ -13,17 +13,13 @@ window.addEventListener("scroll", function () {
     }
 });
 
-// const dots = document.querySelectorAll(".dot");
+//nav-bar-responsive
+var bar = document.getElementById("bar");
+var resMenu = document.querySelector(".res-menu");
 
-// dots.forEach(dot => {
-//   dot.addEventListener("click", function (event) {
-//     event.preventDefault(); // Prevent the default anchor link behavior
-//     dots.forEach(otherDot => {
-//       otherDot.classList.remove("active");
-//     });
-//     dot.classList.add("active");
-//   });
-// });
+bar.addEventListener("click", function(){
+  resMenu.classList.toggle("height");
+});
 
 const dots = document.querySelectorAll(".dot");
 const imgScroll = document.querySelector(".img-scroll");
@@ -71,9 +67,42 @@ btn4.addEventListener("click", function(){
 });
 
 
+// $('.slider').slick({
+//   slidesToShow: 2,
+//   slidesToScroll: 1,
+//   autoplay: true,
+//   autoplaySpeed: 1000,
+// });
+
 $('.slider').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
   slidesToShow: 4,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 1000,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
 });
