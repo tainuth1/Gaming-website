@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <script src="https://kit.fontawesome.com/2c9290e2d0.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="product-page.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <div class="wrap-all">
+        <div class="shop-logo container">
+            <h1> <span><</span> GECO SHOP <span>></span> </h1>
+            <h2 class="go-back">
+                <a href="index.html">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    GO BACK
+                </a>
+            </h2>
+            <li id="cart-btn"><i class="fa-solid fa-cart-shopping cart-pro-page"></i></li>
+            <div id="cart-item" class="cart cart-item-page">
+                <div style="display: block;" id="x-btn" class="xbutton"><i class="fa-solid fa-xmark"></i></div>
+                <div class="head"><p>My Cart</p></div>
+                <div id="cartItem" class="pro-page-height">
+                    Your cart is empty
+                    
+                </div>
+                <div class="foot-total">
+                    <div class="total-value">
+                        <h4>Total: &nbsp;&nbsp;<h3 id="total"> $ 0.00</h3></h4>
+                    </div>
+                    <div class="Order">Order Now</div>
+                </div>
+            </div>
+        </div>
+        <div class="search">
+            <input type="search" name="" id="search" placeholder="Search..." class="form-control">
+        </div>
+        <center>
+            <img class="bar-img" src="images/title_bar-yellow.png" alt="">
+        </center>
+        <div class="set-menu">
+            <div class="bar container">
+                <i class="fa-solid fa-bars-staggered"></i>
+                <div class="add-menu">
+                    <li>Setting</li>
+                    <li id="add">Add Product</li>
+                </div>
+            </div>
+            <div id="adminCard">
+                <p class="h1">Are you admin?</p> 
+                <button class="btn btn-primary"  onclick="showPasswordCard()">YES</button>
+                <button class="btn btn-danger"  onclick="hideAdminCard()">NO</button>
+            </div>
+              
+            <div id="passwordCard">
+                <p>Enter Password:</p>
+                <input type="password" id="passwordInput" class="form-control">
+                <button class="btn btn-primary" onclick="showProductForm()">Join</button>
+                <button class="btn btn-danger" onclick="hidePasswordCard()">Cancel</button>
+            </div>
+            <form id="productForm">
+                <center>
+                    <h3>Add Product</h3>
+                </center>
+                <input type="text" id="newName" placeholder="Enter Product Name" class="form-control">
+                <input type="text" id="newDesc" placeholder="Enter Product Disc.." class="form-control">
+                <input type="file" name="file" id="newImage" style="display: none;">
+                <div class="image-input">
+                    <label for="newImage" class="camera">
+                        <i class="fa-solid fa-file-image"></i>
+                    </label>
+                    <div class="add-img-wrap">
+                        <img src="" id="add-image" alt="">
+                    </div>
+                </div>
+                <input type="number" id="newPrice" placeholder="Price" class="form-control">
+                <input class="btn btn-primary" type="button" value="Add Product" onclick="addNewProduct(), hideAddProduct()">
+                <input class="btn btn-danger" type="button" value="Cancel" onclick="hideAddProduct()">
+            </form>            
+        </div>
+        <div class="container cart-item-wrap">
+            <div id="container" class="product-slider gap">
+
+            </div>
+        </div>
+
+
+
+
+        <div class="back-footer margin-top-footer">
+            <div class="search-footer">
+                <div class="text">OUR NEWSLETTER</div>
+                <div class="send-email">
+                    <div class="search-area">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="text" placeholder="Enter Your Email">
+                    </div>
+                    <div class="sub">
+                        SUBSCRIPTION
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer-menu1 fm">
+                    <img src="images/logo.png" alt="">
+                    <p>Gemas marketplace the relase etras thats sheets continig passag.</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Address : PO Box W75 Street lan West new queens</p>
+                    <p><i class="fa-solid fa-headphones"></i> Phone : +24 1245 654 235</p>
+                    <p><i class="fa-regular fa-envelope-open"></i> Email : info@exemple.com</p>
+                </div>
+                <div class="footer-menu2 fm">
+                    <h2>PRODUCT</h2>
+                    <a href="#">Graphics (26)</a>
+                    <a href="#">Backgrounds (11)</a>
+                    <a href="#">Fonts (9)</a>
+                    <a href="#">Music (3)</a>
+                    <a href="#">Photography (3)</a>
+                </div>
+                <div class="footer-menu2 fm">
+                    <h2>NEED HELP?</h2>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Refund Policy</a>
+                    <a href="#">Affiliate</a>
+                    <a href="#">FAQUse Cases</a>
+                </div>
+                <div class="footer-menu3 fm">
+                    <h2>FOLLOW US</h2>
+                    <div class="plateform">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-pinterest-p"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="back-last">
+            <div class="last">
+                <p>Copyright © 2020 Geco All Rights Reserved.</p>
+                <img src="images/card_img.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="product.js"></script>
+<script src="add-ppro-condition.js"></script>
+<script src="barBtn.js"></script>
+<!-- <script src="search.js"></script> -->
+</html>

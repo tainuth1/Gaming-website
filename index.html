@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/2c9290e2d0.js" crossorigin="anonymous"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product.css">
     <title>Gaming</title>
 </head>
 <body>
@@ -51,7 +54,7 @@
                     </li>
                     <li><a href="#">OVERVIEW</a></li>
                     <li><a href="#">COMMUNITY</a></li>
-                    <li><a href="#">STORE</a></li>
+                    <li><a href="product.html">STORE</a></li>
                     <li class="lead-menu">
                         <a class="menu-a" href="#">BLOG</a>
                         <div class="sub-menu sub2">
@@ -60,7 +63,30 @@
                         </div>
                     </li>
                     <li><a href="#">CONTACT</a></li>
-                    <li><i class="fa-solid fa-cart-shopping"></i></li>
+                    <li id="cart-btn"><i class="fa-solid fa-cart-shopping"></i></li>
+                    <div id="cart-item" class="cart none-card">
+                        <div style="display: none;" id="x-btn" class="xbutton"><i class="fa-solid fa-xmark"></i></div>
+                        <div class="head"><p>My Cart</p></div>
+                        <div id="cartItem">
+                            Your cart is empty
+                            <!-- <div class="cart-pro">
+                                <div class="image-add">
+                                    <img src="images/s_product_img04.jpg" alt="">
+                                </div>
+                                <div class="name-price">
+                                    <div class="cart-item-name">V-A-R</div>
+                                    <div class="cart-item-price">50$</div>
+                                </div>
+                                <i class='fa-solid fa-trash'></i>
+                            </div> -->
+                        </div>
+                        <div class="foot-total">
+                            <div class="total-value">
+                                <h4>Total: &nbsp;&nbsp;<h3 id="total"> $ 0.00</h3></h4>
+                            </div>
+                            <div class="Order">Order Now</div>
+                        </div>
+                    </div>
                     <li><i class="fa-solid fa-magnifying-glass"></i></li>
                 </ul>
             </div>
@@ -322,73 +348,14 @@
                 <p>Compete with 100 players on a remote island for winner takes showdown <br> known issue where certain skin strategic</p>
                 <img src="/images/title_bar-yellow.png" alt="">
             </div>
-            <div class="product-slider slider">
-                <div class="product-card">
-                    <div class="pro-img">
-                        <img src="images/s_product_img01.jpg" alt="">
-                        <div class="name-tage"><p>T-SHIRT</p></div>
-                    </div>
-                    <div class="pro-detail">
-                        <h2>WOMAN BLACK T-SHIRT</h2>
-                        <div class="price">
-                            <span>$25.00</span>
-                            <span><i class="fa-solid fa-cart-shopping"></i></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="pro-img">
-                        <img src="images/s_product_img02.jpg" alt="">
-                        <div class="name-tage"><p>T-SHIRT</p></div>
-                    </div>
-                    <div class="pro-detail">
-                        <h2>WOMAN BLACK T-SHIRT</h2>
-                        <div class="price">
-                            <span>$25.00</span>
-                            <span><i class="fa-solid fa-cart-shopping"></i></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="pro-img">
-                        <img src="images/s_product_img03.jpg" alt="">
-                        <div class="name-tage"><p>T-SHIRT</p></div>
-                    </div>
-                    <div class="pro-detail">
-                        <h2>WOMAN BLACK T-SHIRT</h2>
-                        <div class="price">
-                            <span>$25.00</span>
-                            <span><i class="fa-solid fa-cart-shopping"></i></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="pro-img">
-                        <img src="images/s_product_img04.jpg" alt="">
-                        <div class="name-tage"><p>T-SHIRT</p></div>
-                    </div>
-                    <div class="pro-detail">
-                        <h2>WOMAN BLACK T-SHIRT</h2>
-                        <div class="price">
-                            <span>$25.00</span>
-                            <span><i class="fa-solid fa-cart-shopping"></i></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="pro-img">
-                        <img src="images/s_product_img02.jpg" alt="">
-                        <div class="name-tage"><p>T-SHIRT</p></div>
-                    </div>
-                    <div class="pro-detail">
-                        <h2>WOMAN BLACK T-SHIRT</h2>
-                        <div class="price">
-                            <span>$25.00</span>
-                            <span><i class="fa-solid fa-cart-shopping"></i></span>
-                        </div>
-                    </div>
-                </div>
+            <div class="product-slider product-slider-overflow">
+                
             </div>
+            <center>
+                <div class="see-more">
+                    <a href="product.html" target="_blank">See More >>></a>
+                </div>
+            </center>
         </div>
     </div>
 
@@ -510,5 +477,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
 <script src="script.js"></script>
+<script src="product.js"></script>
 </html>

@@ -1,0 +1,272 @@
+.bar-img{
+    width: 300px;
+    margin: 1rem 0;
+}
+#cart-item{
+    z-index: 99;
+}
+.cart {
+    position: absolute;
+    top: 100%;
+    right: 6%;
+    /* display: none; */
+    width: 400px;
+    height: 0px;
+    background-color: #ffc107;
+    border-radius: 10px;
+    /* padding: 20px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: height .3s linear;
+    overflow: hidden;
+}
+.cart.height{
+    height: 600px;
+    border: 1px solid #ffc107;
+}
+#cartItem::-webkit-scrollbar{
+    display: none;
+}
+.head{
+    text-align: center;
+    font-size: 2rem;
+    border-bottom: 1px solid whitesmoke;
+}
+.cart-pro{
+    background-color: #1c1121;
+    display: flex;
+    padding: 10px 1rem;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+}
+.image-add{
+    padding: 2px;
+}
+.image-add img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid #ffc107;
+}
+.fa-trash{
+    color: #ffc107;
+    cursor:  pointer;
+}
+.name-price{
+    display: flex;
+    gap: 50px;
+    color: #ffc107;
+}
+.head{
+    font-size: 2rem;
+    margin: 1rem 0;
+    font-weight: 700;
+    color: #fff;
+}
+#cartItem{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #1c1121;
+    height: 450px;
+    overflow-y: scroll;
+    padding: 10px 1rem;
+}
+.total-value{
+    width: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.Order{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    color: #ffc107;
+    cursor: pointer;
+}
+.foot-total{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 15px 2.5rem;
+    background-color: #1c1121;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.see-more{
+    margin-top: 2.5rem;
+}
+.see-more a{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
+    transition: all .1s linear;
+    cursor: pointer;
+}
+.see-more:hover{
+    letter-spacing: 1px;
+}
+.cart-item-wrap{
+    margin-top: 2rem;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search input{
+    width: 500px;
+}
+.product-page{
+    position: fixed;
+    height: 730px;
+    width: 700px;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    background-color: white;
+}
+#x-btn{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+#x-btn i{
+    font-size: 50px;
+}
+.cart-item-page{
+    position: fixed;
+    width: 800px;
+    height: 730px;
+    top: 0;
+    right: -100%;
+    transition: right .3s linear;
+}
+.cart-item-page.right{
+    right: 0;
+}
+.pro-page-height{
+    height: 800px !important;
+}
+.cart-pro-page{
+    position: absolute;
+    font-size: 1.5rem;
+    color: #ffc107;
+    top: 25px;
+    right: 5rem;
+    cursor: pointer;
+}
+.add-product-card{
+    width: 280px;
+    height: 300px;
+    background-color: #ffc107;
+    border-radius: 10px;
+    border: 1px dotted whitesmoke;
+}
+.bar{
+    position: relative;
+}
+.fa-bars-staggered{
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+.gap{
+    gap: 2.2rem;
+}
+.add-menu{
+    position: absolute;
+    top: 0;
+    left: 50px;
+    height: 0px;
+    background-color: #ffc107;
+    overflow: hidden;
+    transition: all .1s linear;
+    border-radius: 0 15px 0 15px;
+}
+.add-menu li{
+    cursor: pointer;
+    margin: 10px 1rem;
+    font-weight: 500;
+}
+.add-menu li:hover{
+    color: #6e5200;
+}
+.add-menu.add-menu-height{
+    height: 75px;
+}
+#adminCard{
+    position: fixed;
+    top: 40%;
+    left: 37%;
+    padding: 2rem;
+    width: 370px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 50;
+}
+#adminCard button{
+    margin: 30px 20px 0 20px;
+}
+#passwordCard{
+    position: fixed;
+    top: 40%;
+    left: 37%;
+    padding: 2rem;
+    width: 370px;
+    background-color: white;
+    z-index: 50;
+    border-radius: 10px;
+}
+#passwordCard button{
+    margin: 1rem 1rem 0 0;
+}
+#productForm{
+    position: fixed;
+    top: 30%;
+    left: 37%;
+    padding: 2rem;
+    width: 370px;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 50;
+}
+#adminCard, #passwordCard, #productForm{
+    display: none;
+}
+#productForm input{
+    margin: 10px 0;
+}
+.camera{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed gray;
+    border-radius: 5px;
+}
+.image-input{
+    display: flex;
+    gap: 2rem;
+}
+.add-img-wrap{
+    width: 110px;
+    height: 120px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.add-img-wrap img{
+    width: 110px;
+    height: 120px;
+    object-fit: cover;
+}
+.margin-top-footer{
+    margin-top: 8rem;
+}
